@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100vw;
+    height: 5vh;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+nav ul{display: flex; justify-content: space-evenly; align-items: center;}
+
+nav ul li{
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    list-style: none;
+    user-select: none;
+    padding: 5px 20px;
+    margin: 0.8rem 0;
+}
+
+nav ul li:hover{
+    color: white; background-color: #999999;
+    border-radius: 1rem;
+}
+
+section{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-image: url(img/space.png);
+    display: flex;
+    align-items: center;
+}
+
+.justy-space{
+    justify-content: space-evenly;
+}
+
+section a img{
+    width: 30vw;
+    height: 25vw;
+}
+
+.star img{
+    width: 7vw;
+    height: 7vw;
+    margin: 2vw;
+}
+
+.starName{
+    position: absolute;
+    color: white;
+    margin-top: -8vw;
+    opacity: 0;
+}
+
+.star:hover{
+    transform: scale(1.4);
+}
+
+.star:hover~.starName{
+    opacity: 1;
+}
+
+#milky{
+    filter: brightness(0.8);
+}
+
+#milky:hover{
+    filter: brightness(1.7);
+    transform: scale(1.2);
+}
+
+#milky:hover~#milkyName{
+    opacity: 1;
+}
+
+#milkyName{
+    position: absolute;
+    margin-left: -43.5vw;
+    margin-top: -25vw;
+    opacity: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+#spaceStation{
+    filter: brightness(0.6);
+}
+
+#spaceStation:hover{
+    filter: brightness(1.2);
+    transform: scale(1.2);
+}
+
+#spaceStation:hover~#spaceName{
+    opacity: 1;
+}
+
+#spaceName{
+    position: absolute;
+    margin-left: 43.5vw;
+    margin-top: -25vw;
+    opacity: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+footer{
+    width: 100vw;
+    height: 10rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    margin-left: 5rem;
+}
+
+.row div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+}
+
+.row{
+    width: 100vw;
+    display: flex;
+}
+.cal1{width: 8.33%;}
+.cal2{width: 16.66%;}
+.cal3{width: 25%;}
+.cal4{width: 33.33%;}
+.cal5{width: 41.66%;}
+.cal6{width: 50%;}
+.cal7{width: 58.33%;}
+.cal8{width: 66.66%;}
+.cal9{width: 75%;}
+.cal10{width: 83.33%;}
+.cal11{width: 91.66%;}
+.cal12{width: 100%;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+.main{
+    justify-content: start;
+    align-items: start;
+    /*background-image: url(img/space.png);*/
+    background-color: black;
+    padding: 2rem 0;
+}
+
