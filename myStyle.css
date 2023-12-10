@@ -13,6 +13,13 @@ body{
 
 p{
     font-size: 1.4rem;
+    color: white;
+    line-height: 2.4rem;
+}
+
+h1{
+    font-size: 4.8rem;
+    color: white;
 }
 
 a{
@@ -83,62 +90,18 @@ section a img{
     opacity: 1;
 }
 
-#milky{
-    filter: brightness(0.8);
-}
-
-#milky:hover{
-    filter: brightness(1.7);
-    transform: scale(1.2);
-}
-
-#milky:hover~#milkyName{
-    opacity: 1;
-}
-
-#milkyName{
-    position: absolute;
-    margin-left: -43.5vw;
-    margin-top: -25vw;
-    opacity: 0;
-    font-size: 2rem;
-    font-weight: 500;
-    color: whitesmoke;
-}
-
-#spaceStation{
-    filter: brightness(0.6);
-}
-
-#spaceStation:hover{
-    filter: brightness(1.2);
-    transform: scale(1.2);
-}
-
-#spaceStation:hover~#spaceName{
-    opacity: 1;
-}
-
-#spaceName{
-    position: absolute;
-    margin-left: 43.5vw;
-    margin-top: -25vw;
-    opacity: 0;
-    font-size: 2rem;
-    font-weight: 500;
-    color: whitesmoke;
-}
-
 footer{
     width: 100vw;
     height: 10rem;
     background-color: white;
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 footer p{
-    margin-left: 5rem;
+    font-size: 1.2rem;
+    margin: 2rem 5rem;
+    color: black;
 }
 
 .row div{
@@ -174,6 +137,57 @@ footer p{
     align-items: start;
     /*background-image: url(img/space.png);*/
     background-color: black;
-    padding: 2rem 0;
+    padding: 5vw 0;
 }
 
+#mainPage{
+    display: flex;
+    justify-content: end;
+}
+
+.bg1 div{
+    margin: 0 10vw;
+}
+
+.bg1{
+    width: 100vw;
+    background-color: #978c84;
+    background-image: url(img/start.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#titleText{
+    margin: 20vw 5vw;
+}
+
+#ex{
+    font-size: 2.4rem;
+}
+
+.headline{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.blackBg{
+    background-color: #00000040;
+    padding: 2rem;
+}
+
+.h50{
+    height: 10vw;
+}
+
+#ship{
+    display: flex;
+    justify-content: center;
+    transform: scale(90%);
+}
+
+.line{
+    background-image: url(img/line.png);
+    height: 1px;
+    position: fixed;
+}
