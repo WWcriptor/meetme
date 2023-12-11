@@ -196,7 +196,7 @@ footer p{
 .line{
     background-image: url(img/line.png);
     height: 1px;
-    position: fixed;
+    position: absolute;
 }
 
 .spaceShip{
