@@ -184,10 +184,32 @@ footer p{
     display: flex;
     justify-content: center;
     transform: scale(90%);
+    margin: 0px;
 }
+
+#ship:hover{
+    transform: scale(110%);
+    filter: brightness(1.2);
+}
+
 
 .line{
     background-image: url(img/line.png);
     height: 1px;
     position: fixed;
+}
+
+.spaceShip{
+    font-size: 2.4rem;
+    opacity: 0;
+}
+
+#ship:hover~.spaceShip{
+    opacity: 1;
+    font-weight: bold;
+}
+
+#logo{
+    margin-left: -20vw;
+    margin-top: -10vw;
 }
