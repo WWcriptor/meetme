@@ -6,16 +6,31 @@
     <title>Drops</title>
     <link rel="stylesheet" href="plant.css">
     <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="save.js" defer></script>
 </head>
 <body>
-    <nav class="row">
-        <div class="cal6"></div>
-        <ul class="cal6 text-center">
-            <a href="index.html"><li>Home</li></a>
-            <a href=""><li>About us</li></a>
-            <a href=""><li>My page</li></a>
-        </ul>
-    </nav>
-    <div id="drops"></div>
+    <div class="main" id="drops">
+        <div class="row" id="menu-margin">
+            <div class="cal1">
+                <a class="headline logo" href="index.html"><p>MEET ME</p></a>
+            </div>
+            <div class="cal4" id="icon">
+                <p class="material-symbols-outlined headline" id="info_icon">help</p>
+                <p id="infomation">MEET ME 이용방법
+                    <br>1. 행성지도를 통해 여러 행성을 둘러본다.
+                    <br>2. 원하는 행성에 생각나는 사건, 대상, 장소 등을 기록한다.
+                    <br>3. 기록이 끝났다면 다른 행성으로 이동하고 기록하기를 반복한다.
+                    <br>4. 매 7번째 기록에 등장하는 별자리에 이름을 짓는다.
+                </p>
+            </div>
+        </div>
+        <div class="container diary">
+            <p class="diaryEx">일기 기록하기</p>
+            <textarea id="diary-entry" placeholder="오늘의 일기를 입력하세요..."></textarea>
+            <button onclick="saveDiary()">일기 저장</button>
+            <div class="diaryEx2"><p id="diary-output"></p></div>
+        </div>
+    </div>
 </body>
 </html>

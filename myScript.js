@@ -6,7 +6,6 @@ let vw6 = 0.06*vw
 
 for(const s of star)
 {
-
     s.addEventListener('click',function () {
         point(s);
       });
